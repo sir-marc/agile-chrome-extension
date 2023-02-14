@@ -53,6 +53,12 @@ const css = `
 
   font-weight: bold;
   font-size: 20px;
+  transition: all 0.3s;
+}
+
+.person-bubble.-hide {
+  transform: scale(0.3);
+  transform-origin: center;
 }
 
 .-hidden {
@@ -85,7 +91,7 @@ function setup(team) {
       ${team
         .map(
           (member) =>
-            '<div class="person-bubble" style="background-color: ' +
+            '<div class="person-bubble" data-person-bubble style="background-color: ' +
             member.color +
             ';"><span class="person-name">' +
             member.firstname[0].toUpperCase() +
@@ -100,6 +106,7 @@ function setup(team) {
   const $timeOutput = $root.querySelector("[data-time-output]");
   const $cancelBtn = $root.querySelector("[data-cancel]");
   const $timerButtons = $root.querySelector("[data-timer-buttons]");
+  const $peopleBubbles = $root.querySelectorAll("[data-person-bubble]")
   let interval;
 
   $root
@@ -112,6 +119,8 @@ function setup(team) {
     clearInterval(interval);
     resetView();
   });
+
+  $peopleBubbles.forEach($bubble => $bubble.addEventListener('click', (e) => $bubble.classList.toggle("-hide")))
 
   const startTimer = (time) => {
     $display.classList.remove("-hidden");
