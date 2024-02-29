@@ -26,19 +26,29 @@ const defaultOpions = {
       "lastname": "Huber"
     },
     {
-      "color": "#a0c4ff",
-      "firstname": "Marc",
-      "lastname": "Berli"
-    },
-    {
       "color": "#FEC2FA",
       "firstname": "Nicolas",
       "lastname": "Kerscher"
     },
     {
       "color": "#bdb2ff",
-      "firstname": "Drin",
-      "lastname": "Saiti"
+      "firstname": "Llyn",
+      "lastname": "Baumann"
+    },
+    {
+      "color": "#F4F2DE",
+      "firstname": "Said",
+      "lastname": "Simokovic"
+    },
+    {
+      "color": "#DBCC95",
+      "firstname": "Tim",
+      "lastname": "Bussmann"
+    },
+    {
+      "color": "#D9EDBF",
+      "firstname": "Noel",
+      "lastname": "Voelin"
     }
   ],
 };
