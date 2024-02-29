@@ -10,7 +10,7 @@ const css = `
   position: fixed;
   bottom: 0;
   box-shadow: 0px 0px 22px 7px rgba(0,0,0,0.44);
-  background: #fff;
+  background: rgb(29, 33, 37);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,6 +51,7 @@ const css = `
   justify-content: center;
   align-items: center;
 
+  color: rgb(22, 26, 29);
   font-weight: bold;
   font-size: 20px;
   transition: all 0.3s;
